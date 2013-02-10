@@ -15,6 +15,10 @@ $(document).ready(function() {
       }
 
   });
+
+    window.setTimeout(function(){
+        $('#post-grid').masonry('reload')
+    },1500)
 });
 
 
