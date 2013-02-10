@@ -1,0 +1,428 @@
+/*-----------------------------------------------------------------------------------*/
+/*	Homepage/Archive Styles (anywhere that grids are used)
+/*-----------------------------------------------------------------------------------*/
+body{
+    background: #4d5053 url(images/bg.png) repeat;
+    margin: 0 auto;
+}
+
+.post-grid {
+	width: auto;
+	margin: 0 -20px 0 0;
+	max-width: 920px;
+}
+
+.grid-item {
+	padding: 25px 20px 5px;
+	float: left;
+	width: 440px;
+	margin: 0 20px 20px 0;
+    box-sizing: border-box;
+
+    background: #3d3f40;
+    -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2), inset 0px -2px 0 0 rgba(0, 0, 0, 0.15), inset 0 -15px 30px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2), inset 0px -2px 0 0 rgba(0, 0, 0, 0.15), inset 0 -15px 30px 0 rgba(0, 0, 0, 0.1);
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+
+    /*-webkit-transition : all 500ms ease;*/
+        /*-moz-transition : all 500ms ease;*/
+        /*-ms-transition : all 500ms ease;*/
+        /*-o-transition : all 500ms ease;*/
+        /*transition : all 500ms ease;*/
+}
+
+.grid-item .post-image img,
+.grid-item .post-image .overlay {
+	-webkit-border-radius: 3px 3px 0 0;
+	border-radius: 3px 3px 0 0;
+}
+
+.post-footer {
+	margin-top: -5px;
+	margin-bottom: 0;
+}
+
+.featured-item {
+	margin-left: 10px;
+}
+
+.featured-video{
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px; height: 0; overflow: hidden;
+    margin:-26px -20px 20px;
+    border-radius: 3px 3px 0 0;
+}
+
+.featured-video p{
+    padding: 0 !important;
+}
+.featured-video iframe,
+.featured-video object,
+.featured-video embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.osx.gecko .featured-item {
+	margin-left: 10px;
+}
+
+.featured-item:before,
+.comment-item:before {
+	font: normal 25px/20px "Entypo";
+	content: "âž¦";
+	-webkit-font-smoothing: antialiased;
+	display: inline-block;
+	margin-right: 2px;
+	vertical-align: top;
+}
+
+.win .featured-item:before,
+.win .comment-item:before {
+	line-height: 8px;
+}
+
+.featured-item:before {
+	content: "ðŸ‘";
+}
+
+/* Large screens only */
+@media only screen and (min-width: 768px) {
+
+	.single-post-wrapper .quote-header blockquote:before,
+	.single-post-wrapper .quote-header blockquote:after {
+		font-size: 106px;
+	}
+
+	.single-post-wrapper .quote-header blockquote:before {
+		top: 18px;
+		left: -63px;
+	}
+
+	.single-post-wrapper .quote-header blockquote:after {
+		bottom: -40px;
+		right: -62px;
+	}
+
+	.single-post-wrapper .post-header {
+		margin: -50px -40px 50px -40px;
+	}
+
+	.single-post-wrapper .quote-header,
+	.single-post-wrapper .link-header {
+		padding: 50px 40px;
+		font-size: 1.333em;
+	}
+
+	.single-post-wrapper .quote-header {
+		padding: 50px 100px;
+	}
+
+	.single-post-wrapper .link-header h2 {
+		margin-bottom: 5px;
+	}
+
+	.single-post-wrapper .link-header h2:before {
+		font-size: 60px;
+	}
+
+	.single-post-wrapper .link-header span {
+		font-size: 14px;
+	}
+
+	.single-post-wrapper .quote-header figcaption {
+		font-size: 1em;
+		margin-top: 20px;
+	}
+
+	.single-post-wrapper {
+		padding: 50px 40px;
+	}
+
+}
+
+/* Smaller than standard 960 (devices and browsers) */
+@media only screen and (max-width: 959px) {
+
+	.body-width {
+		padding: 0 20px;
+	}
+
+	.primary-nav {
+		display: none !important;
+	}
+
+	.dropdown-nav,
+	.dropdown-nav select {
+		display: block;
+	}
+
+	.header-item {
+		margin-left: 20px;
+	}
+
+}
+
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+
+	.body-width {
+		max-width: 728px;
+	}
+
+	.post-grid {
+		max-width: 748px;
+	}
+
+	.grid-item {
+		max-width: 324px;
+        margin-right:18px;
+
+	}
+
+	.single-post-wrapper .post-wrapper {
+		float: none !important;
+		width: auto;
+		margin-right: 0;
+
+	}
+
+	.sidebar {
+		margin: 50px -40px 0 0;
+		float: none !important;
+		display: block;
+		width: auto !important;
+	}
+
+	.widget {
+		width: 50%;
+		float: left;
+		padding-right: 40px;
+		-webkit-box-sizing: border-box;
+	    -moz-box-sizing: border-box;
+	    box-sizing: border-box;
+	}
+
+}
+
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 767px) {
+
+	.header {
+		margin-bottom: 30px;
+	}
+
+	.body-width {
+		width: 440px;
+		padding: 0 20px;
+	}
+
+	.grid-item {
+		width: 400px;
+	}
+
+	.page-pagination {
+		margin-bottom: 0;
+	}
+
+	.footer .alignleft,
+	.footer .alignright {
+		float: none;
+		text-align: center;
+	}
+
+	.single-post-wrapper .post-wrapper,
+	.single-post-wrapper .sidebar {
+		float: none !important;
+		width: auto;
+		margin-right: 0;
+	}
+
+	.large-container {
+		padding: 30px;
+	}
+
+	.single-post-wrapper {
+		padding: 40px 30px;
+	}
+
+	.single-post-wrapper .post-header {
+		margin: -40px -30px 40px -30px;
+	}
+
+	.single-post-wrapper .link-header {
+		padding: 30px 25px;
+	}
+
+	.single-post-wrapper .quote-header {
+		padding: 30px auto;
+	}
+
+	.single-post-wrapper .post-wrapper {
+		font-size: 1.083em; /* 13px */
+		line-height: 1.615em; /* 21px */
+	}
+
+	.single-post-wrapper .post-header {
+		font-size: 1em;
+		line-height: 1.667em;
+	}
+
+	.single-post-wrapper .post-wrapper h3 {
+		font-size: 1.077em; /* 14px */
+		line-height: 1.571em; /* 22px */
+	}
+
+	.single-post-wrapper .link-header h2,
+	.single-post-wrapper .quote-header blockquote {
+		font-size: 1.5em;
+		line-height: 1.556em;
+	}
+
+	.single-post-wrapper .quote-header figcaption {
+		margin-top: 13px;
+	}
+
+	.post-content h1,
+	.post-content h2,
+	.post-content h3,
+	.post-content h4,
+	.post-content h5,
+	.post-content h6 {
+		margin-top: 30px;
+	}
+
+	.post-content .alignleft,
+	.post-content .alignright {
+		float: none;
+		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
+		display: block;
+	}
+
+	.comment-title {
+		display: block;
+		margin-bottom: 7px;
+	}
+
+	.sidebar {
+		margin: 50px -20px 0 0;
+		float: none !important;
+		display: block;
+		width: auto !important;
+	}
+
+}
+
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 479px) {
+
+	.header .alignleft,
+	.header .alignright,
+	.page-identifier .alignleft,
+	.page-identifier .alignright {
+		display: block;
+		float: none !important;
+	}
+
+	.header-item {
+		margin: 0 0 10px 0 !important;
+	}
+
+	.header-item:last-of-type {
+		margin: 0 !important;
+	}
+
+	h1.site-logo {
+		margin-bottom: 20px !important;
+	}
+
+	.site-logo a {
+		width: 100% !important;
+		background-position: center center !important;
+	}
+
+	.dropdown-nav,
+	#searchform,
+	#search {
+		display: block;
+		width: auto;
+	}
+
+	.header #search {
+		width: 264px !important;
+	}
+
+	.featured-item span {
+		display: none;
+	}
+
+	.body-width {
+		width: 300px;
+		padding: 0 10px;
+	}
+
+	.post-grid {
+		width: 300px;
+	}
+
+	.grid-item {
+		margin-right: 0;
+		width: 260px;
+	}
+
+	.large-container {
+		padding: 20px;
+	}
+
+	.single-post-wrapper {
+		padding: 25px 20px;
+	}
+
+	.post-content ul,
+	.post-content ol {
+		padding-left: 15px;
+	}
+
+	.single-post-wrapper .post-header {
+		margin: -25px -20px 25px -20px;
+	}
+
+	.single-post-wrapper .post-wrapper,
+	.single-post-wrapper .post-header {
+		font-size: 1em;
+		line-height: 1.667em;
+	}
+
+	.quote-header {
+		padding: 25px 20px;
+	}
+
+	.quote-header blockquote:before,
+	.quote-header blockquote:after {
+		content: "";
+		display: none;
+	}
+
+	.commentlist .children {
+		margin: 0 0 0 20px !important;
+	}
+
+	input[type="text"] {
+		width: 150px;
+	}
+
+	.meta-table td {
+		padding: 10px 10px;
+	}
+
+	.date-item {
+		white-space: normal;
+	}
+
+}
