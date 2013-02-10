@@ -47,6 +47,15 @@ body{
 	margin-left: 10px;
 }
 
+.featured-image{
+    border-radius: 3px 3px 0 0;
+    margin: -25px -20px 5px;
+}
+.featured-image img{
+    width:100%;
+    height: auto;
+    border-radius:3px 3px 0 0
+}
 .featured-video{
     position: relative;
     padding-bottom: 56.25%;

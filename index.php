@@ -7,8 +7,7 @@
 
    		<div id="post-<?php the_ID(); ?>" <?php post_class('grid-item'); ?>>
 		 <?php if ( has_post_thumbnail() ) { ?>
-         <div class="gridly-image"><a href="<?php the_permalink() ?>"><?php the_post_thumbnail( 'summary-image' );  ?></a></div>
-          <div class="gridly-category"><p><?php the_category(', ') ?></p></div>
+         <div class="gridly-image featured-image"><a href="<?php the_permalink() ?>"><?php the_post_thumbnail( 'large');  ?></a></div>
 		  <?php } ?>
                <?php if ( get('featured_video',TRUE) ) {
                 echo '<div class="featured-video">' . get('featured_video',TRUE) . '</div>';
