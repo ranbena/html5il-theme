@@ -12,7 +12,7 @@
         <?php } ?>
         <?php if (get('featured_video', TRUE)) {
         $youtube = get('featured_video');
-        echo '<div class="featured-video preview" data-youtube="'. $youtube .'" style="background-image:url(http://img.youtube.com/vi/' . $youtube . '/hqdefault.jpg)"><div class="play"></div></div>';
+        echo '<div class="featured-video preview" data-youtube="'. $youtube .'" data-title="'.the_title('','',false).'" style="background-image:url(http://img.youtube.com/vi/' . $youtube . '/hqdefault.jpg)"><div class="play"></div></div>';
     } else {
             } ?>
 

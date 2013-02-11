@@ -22,11 +22,16 @@ $(document).ready(function() {
 
 	$('.preview').on('click',function(){
 	    id = $(this).data('youtube');
+	    title = $(this).data('title');
 		var iframe = $('<iframe></iframe>');
 		iframe.attr({
 			src : 'http://www.youtube.com/embed/' + id + '?rel=0&showinfo=0&autoplay=1',
 			frameborder : 0,
 			allowfullscreen : true
+		});
+		mixpanel.track('VideoPlay',{
+			"youtube_id" : id,
+			"post_title" : title
 		});
 		$(this).html(iframe);
 	})

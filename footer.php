@@ -7,9 +7,16 @@
 
 
  <div id="copyright">
- <p>&copy; <?php echo date("Y"); echo " "; bloginfo('name'); ?> | <a href="<?php echo esc_url( __('http://www.eleventhemes.com/', 'eleventhemes') ); ?>" title="Eleven WordPress Themes" target="_blank">Theme by Eleven Themes </a></p>
- </div><!-- // copyright -->   
-     
+<!-- <p>&copy; --><?php //echo date("Y"); echo " "; bloginfo('name'); ?><!-- | <a href="--><?php //echo esc_url( __('http://www.eleventhemes.com/', 'eleventhemes') ); ?><!--" title="Eleven WordPress Themes" target="_blank">Theme by Eleven Themes </a></p>-->
+ </div><!-- // copyright -->
+
+<script>
+    <?php $title = wp_title("",false) ?>
+    var title = ("<?= $title ?>" == "") ? 'Index' : "<?= $title ?>";
+    mixpanel.track('Pageview',{
+        "Page Title" : title
+    });
+</script>
 </div><!-- // wrap -->   
 
 	<?php wp_footer(); ?>
