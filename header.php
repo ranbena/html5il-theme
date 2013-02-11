@@ -7,7 +7,7 @@
 	<title><?php bloginfo('sitename'); ?> <?php wp_title(); ?></title>
 	<meta name="description" content="<?php bloginfo('description'); ?>"/>
     <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
-    
+    <link rel="shortcut icon" type="image/x-icon" href="<?php echo get_template_directory_uri(); ?>/images/favicon.ico">
     <!-- styles -->
 <!--	<link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>-->
     <link rel="stylesheet" type="text/css" media="all" href="<?php echo get_template_directory_uri(); ?>/css/reset.css" />
@@ -53,12 +53,12 @@
             </a>
             
        </div>
-        
-                
+
+
        <?php if ( has_nav_menu( 'main_nav' ) ) { ?>
-  		 <div id="nav"><?php wp_nav_menu( array( 'theme_location' => 'main_nav' ) ); ?></div>
+<!--  		 <div id="nav">--><?php //wp_nav_menu( array( 'theme_location' => 'main_nav' ) ); ?><!--</div>-->
        <?php } else { ?>
- 	 	 <div id="nav"><ul><?php wp_list_pages("depth=1&title_li=");  ?></ul></div>
+<!-- 	 	 <div id="nav"><ul>--><?php //wp_list_pages("depth=1&title_li=");  ?><!--</ul></div>-->
 	   <?php } ?>
 
    </div>

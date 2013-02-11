@@ -2,15 +2,16 @@
 
 	<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 			
-           
+         <div class="single-post-wrapper container large-container" >
        
    		<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 			<?php if ( has_post_thumbnail() ) { ?>			
-				<div class="gridly-image"><?php the_post_thumbnail( 'detail-image' );  ?></div>
-                <div class="gridly-category"><p><?php the_category(', ') ?></p></div>
+				<div class="featured-image post-header"><?php the_post_thumbnail( 'original' );  ?></div>
              <?php } ?>
-
-               <?php get('featured_video'); ?>
+               <?php if (get('featured_video', TRUE)) {
+                       echo '<div class="featured-video post-header">' . get('featured_video', TRUE) . '</div>';
+                   } else {
+                           } ?>
 
        			<div class="gridly-copy">
                 <h1><?php the_title(); ?></h1>
@@ -27,18 +28,13 @@
                 
                 
        </div>
-       
+         </div>
 		<?php endwhile; endif; ?>
        
-       <div class="post-nav">
-               <div class="post-prev"><?php previous_post_link('%link'); ?> </div>
-			   <div class="post-next"><?php next_post_link('%link'); ?></div>
-        </div>      
-   
-       
-       
-       
-  
- 
+<!--       <div class="post-nav">-->
+<!--               <div class="post-prev">--><?php //previous_post_link('%link'); ?><!-- </div>-->
+<!--			   <div class="post-next">--><?php //next_post_link('%link'); ?><!--</div>-->
+<!--        </div>      -->
 
-<?php get_footer(); ?>
+
+<?php //get_footer(); ?>

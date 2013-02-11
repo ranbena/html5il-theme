@@ -59,6 +59,17 @@
     		'after_title'   => '</h3>'
     	));
 	}
+    if (function_exists('register_sidebar')) {
+    	register_sidebar(array(
+    		'name' => 'Second_post',
+    		'id'   => 'second_post',
+    		'description'   => 'Second post widget area',
+    		'before_widget' => '<div id="%1$s" class="widget %2$s"><div class="widget-copy">',
+    		'after_widget'  => '</div></div>',
+    		'before_title'  => '<h3>',
+    		'after_title'   => '</h3>'
+    	));
+	}
 
 
 	// hide blank excerpts 

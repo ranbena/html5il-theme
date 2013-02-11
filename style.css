@@ -1,3 +1,4 @@
+
 /*-----------------------------------------------------------------------------------*/
 /*	Homepage/Archive Styles (anywhere that grids are used)
 /*-----------------------------------------------------------------------------------*/
@@ -99,6 +100,274 @@ body{
 .featured-item:before {
 	content: "ðŸ‘";
 }
+
+.container{
+    background: #3d3f40;
+    -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2), inset 0px -2px 0 0 rgba(0, 0, 0, 0.15), inset 0 -15px 30px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2), inset 0px -2px 0 0 rgba(0, 0, 0, 0.15), inset 0 -15px 30px 0 rgba(0, 0, 0, 0.1);
+}
+
+#disqus_thread{
+    background: rgba(255,255,255,0.1);
+    padding: 20px;
+    border-radius: 3px;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*	Typographical, Body, & Helper Styles
+/*-----------------------------------------------------------------------------------*/
+
+html {
+    font-size: 0.75em;
+    -webkit-text-size-adjust: 0.75em;
+    -ms-text-size-adjust: 0.75em;
+}
+
+body {
+	font: normal "Helvetica Neue", Helvetica, Arial, sans-serif;
+	line-height: 1.667em;
+	position: relative;
+}
+
+a {
+	/* color: #4a6abd; */
+	padding: 2px 4px;
+	margin: -2px -4px;
+	text-decoration: none;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+
+	-webkit-transition: all .1s ease-in-out;
+	-moz-transition: all .1s ease-in-out;
+	-o-transition: all .1s ease-in-out;
+	-ms-transition: all .1s ease-in-out;
+	transition: all .1s ease-in-out;
+}
+
+.osx.gecko a {
+	padding: 3px 4px 2px 4px;
+	margin: -3px -4px -2px -4px;
+}
+
+a:hover,
+.highlight,
+.special-link a {
+	/* background: #4a6abd; */
+	color: #fff !important;
+	text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+	color: inherit;
+}
+
+.post-title,
+.grid-title,
+.single-title,
+.widget-title {
+	margin-top: 0 !important;
+}
+
+.grid-title {
+	margin-bottom: 1.071em;
+}
+
+.comment-title {
+	margin-right: 1em;
+}
+
+h1,
+.respond-section #reply-title {
+	font-size: 1.714em;
+	line-height: 1.417em;
+}
+
+h2 {
+	font-size: 1.429em;
+	line-height: 1.5em;
+}
+
+h3,
+h2.grid-title {
+	font-size: 1.167em;
+	line-height: 1.571em;
+}
+
+h4 {
+	font-size: 1em;
+	line-height: 1.571em;
+}
+
+h5 {
+	font-size: 0.857em;
+	line-height: 1.429em;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+h6 {
+	font-size: 0.714em;
+	line-height: 1.143em;
+	text-transform: uppercase;
+}
+
+audio,
+video,
+iframe,
+object {
+	display: block;
+}
+
+iframe {
+	width: 100% !important;
+}
+
+b, strong {
+	font-weight: bold;
+}
+
+i, em, dfn {
+	font-style: italic;
+}
+
+p {
+	margin-top: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+pre,
+ul,
+ol,
+dl,
+dd,
+blockquote,
+address,
+table,
+fieldset,
+form {
+	margin-bottom: 20px;
+}
+
+li:last-child,
+ul:last-child,
+p:last-child,
+form:last-child,
+h1:last-child,
+h2:last-child,
+h3:last-child,
+h4:last-child,
+h5:last-child,
+h6:last-child,
+pre:last-child {
+	margin-bottom: 0;
+}
+
+ul {
+	list-style: square;
+}
+
+ul ul {
+	list-style: disc;
+}
+
+ul ul ul {
+	list-style: circle;
+}
+
+ol {
+	list-style: decimal;
+}
+
+ol ol {
+	list-style: upper-roman;
+}
+
+ol ol ol {
+	list-style: lower-roman;
+}
+
+ul, ol {
+	padding-left: 2.917em;
+}
+
+ul ul, ul ol, ol ul {
+	margin: 0.833em 0 !important;
+}
+
+blockquote {
+	padding-left: 1.667em;
+	margin: 0 1.667em 1.667em 1.667em;
+}
+
+blockquote blockquote {
+	margin-left: 0;
+}
+
+blockquote cite:before {
+	content: "â€” ";
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section,
+summary {
+    display: block;
+}
+
+pre {
+	padding: 15px 20px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+}
+
+table {
+	width: 100%;
+	border-radius: 3px;
+}
+
+thead,
+tbody,
+tfoot {
+	width: 100%;
+}
+
+td, th {
+	text-align: center;
+}
+
+dt {
+	font-weight: bold;
+}
+
+dd {
+	margin-left: 13px;
+}
+
+dd:before {
+	content: "Â»";
+	margin-left: -13px;
+	width: 13px;
+	display: inline-block;
+}
+
 
 /* Large screens only */
 @media only screen and (min-width: 768px) {
