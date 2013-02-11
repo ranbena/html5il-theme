@@ -15,12 +15,12 @@ $(document).ready(function() {
       }
 
   });
-	if(past_meetups.length){
+	if(past_meetups && past_meetups.length){
 		$('#next').addClass('past');
 		timeago = moment(past_meetups[0].time).fromNow();
 		$('#before_now').html(timeago);
 	}
-	if(future_meetups.length){
+	if(future_meetups && future_meetups.length){
 		$('#next').addClass('next');
 		timeago = moment(future_meetups[0].time).fromNow();
 		$('#from_now').html(timeago);

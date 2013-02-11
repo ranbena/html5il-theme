@@ -45,11 +45,11 @@
                         <?php dynamic_sidebar( 'second_post' ); ?>
                 <?php }  ?>
                 <div class="past_event">
-                    <h2>Our latest meetup was <span id="before_now"></span></h2>
+                    <h3>Our latest meetup was <span id="before_now"></span></h3>
 
                 </div>
                 <div class="next_event">
-                    <h2>Our next meetup is <span id="from_now"></span> - <a id="join" href="#" target="_blank" style="text-decoration: underline">Join</a></h2>
+                    <h3>Our next meetup is <span id="from_now"></span> - <a id="join" href="#" target="_blank" style="text-decoration: underline">Join</a></h3>
 
                 </div>
             </div>

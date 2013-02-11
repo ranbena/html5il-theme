@@ -69,7 +69,7 @@
 
 
        <?php if ( has_nav_menu( 'main_nav' ) ) { ?>
-<!--  		 <div id="nav">--><?php //wp_nav_menu( array( 'theme_location' => 'main_nav' ) ); ?><!--</div>-->
+  		 <div id="nav"><?php wp_nav_menu( array( 'theme_location' => 'main_nav' ) ); ?></div>
        <?php } else { ?>
 <!-- 	 	 <div id="nav"><ul>--><?php //wp_list_pages("depth=1&title_li=");  ?><!--</ul></div>-->
 	   <?php } ?>

@@ -40,10 +40,10 @@ body{
     border-radius: 3px;
 
     /*-webkit-transition : all 500ms ease;*/
-        /*-moz-transition : all 500ms ease;*/
-        /*-ms-transition : all 500ms ease;*/
-        /*-o-transition : all 500ms ease;*/
-        /*transition : all 500ms ease;*/
+    /*-moz-transition : all 500ms ease;*/
+    /*-ms-transition : all 500ms ease;*/
+    /*-o-transition : all 500ms ease;*/
+    /*transition : all 500ms ease;*/
 }
 
 .grid-item .post-image img,
@@ -76,10 +76,10 @@ body{
 	background-size: 100% auto;
 	background-repeat: no-repeat;
 	cursor: pointer;
-	-webkit-transition:all 1350ms ease;
-	-moz-transition:all 1350ms ease;
-	-ms-transition:all 1350ms ease;
-	transition : all 1350ms ease;
+	/*-webkit-transition:all 1350ms ease;*/
+	/*-moz-transition:all 1350ms ease;*/
+	/*-ms-transition:all 1350ms ease;*/
+	/*transition : all 1350ms ease;*/
 	position:relative;
 }
 .preview .play{
@@ -339,7 +339,7 @@ ol ol ol {
 }
 
 ul, ol {
-	padding-left: 2.917em;
+	padding-left: 10px;
 }
 
 ul ul, ul ol, ol ul {
@@ -429,7 +429,7 @@ dd:before {
 	}
 
 	.single-post-wrapper .post-header {
-		margin: -50px -40px 50px -40px;
+		margin: -50px -40px 20px -40px;
 	}
 
 	.single-post-wrapper .quote-header,
@@ -572,7 +572,7 @@ dd:before {
 	}
 
 	.single-post-wrapper .post-header {
-		margin: -40px -30px 40px -30px;
+		margin: -40px -30px 15px -30px;
 	}
 
 	.single-post-wrapper .link-header {
@@ -714,7 +714,7 @@ dd:before {
 	}
 
 	.single-post-wrapper .post-header {
-		margin: -25px -20px 25px -20px;
+		margin: -25px -20px 15px -20px;
 	}
 
 	.single-post-wrapper .post-wrapper,
