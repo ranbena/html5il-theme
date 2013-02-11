@@ -49,8 +49,8 @@
 
                 </div>
                 <div class="next_event">
-                    <h2>Our next meetup is <span id="from_now"></span></h2>
-                    <a id="join" href="#" target="_blank">Join our next meetup</a>
+                    <h2>Our next meetup is <span id="from_now"></span> - <a id="join" href="#" target="_blank" style="text-decoration: underline">Join</a></h2>
+
                 </div>
             </div>
         <?php }?>

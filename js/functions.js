@@ -21,7 +21,6 @@ $(document).ready(function() {
 		$('#before_now').html(timeago);
 	}
 	if(future_meetups.length){
-		alert('sup');
 		$('#next').addClass('next');
 		timeago = moment(future_meetups[0].time).fromNow();
 		$('#from_now').html(timeago);
