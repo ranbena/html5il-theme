@@ -30,6 +30,7 @@ body{
 	float: left;
 	width: 440px;
 	margin: 0 20px 20px 0;
+    -moz-box-sizing: border-box;
     box-sizing: border-box;
 
     background: #3d3f40;
@@ -686,6 +687,7 @@ dd:before {
 		width: 100%;
 		padding: 0 5px;
 		margin: 0 0;
+		-moz-box-sizing:  border-box;
 		box-sizing:  border-box;
 	}
 

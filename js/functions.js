@@ -1,20 +1,20 @@
 
 // masonry code 
 $(document).ready(function() {
-  $('#post-grid').masonry({
-    itemSelector : '.grid-item',
-    columnWidth: function( containerWidth ) {
-      return containerWidth / 2;
-    },
-      isResizable : true,
-      isAnimated: true,
-      animationOptions: {
-        duration: 400,
-        easing: 'linear',
-        queue: false
-      }
-
-  });
+//  $('#post-grid').masonry({
+//    itemSelector : '.grid-item',
+//    columnWidth: function( containerWidth ) {
+//      return containerWidth / 2;
+//    },
+//      isResizable : true,
+//      isAnimated: true,
+//      animationOptions: {
+//        duration: 400,
+//        easing: 'linear',
+//        queue: false
+//      }
+//
+//  });
 	if(past_meetups.length){
 		$('#next').addClass('past');
 		timeago = moment(past_meetups[0].time).fromNow();
