@@ -9,7 +9,8 @@
 				<div class="featured-image post-header"><?php the_post_thumbnail( 'original' );  ?></div>
              <?php } ?>
                <?php if (get('featured_video', TRUE)) {
-                       echo '<div class="featured-video post-header">' . get('featured_video', TRUE) . '</div>';
+                        $id = get('featured_video');
+                       echo '<div class="featured-video post-header"><iframe src="http://www.youtube.com/embed/'.$id.'?rel=0&showinfo=0&controls=1" frameborder="0"></iframe></div>';
                    } else {
                            } ?>
 

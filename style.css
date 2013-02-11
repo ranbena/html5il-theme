@@ -57,6 +57,34 @@ body{
     height: auto;
     border-radius:3px 3px 0 0
 }
+
+.preview{
+	background-position: 50% 50%;
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	cursor: pointer;
+	-webkit-transition:all 500ms ease;
+	-moz-transition:all 500ms ease;
+	-ms-transition:all 500ms ease;
+	transition : all 500ms ease;
+	position:relative;
+}
+.preview .play{
+	position: absolute;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	pointer-events:none;
+	background: url(images/play.png) no-repeat 50% 50%;
+	opacity: 0.6;
+}
+.preview:hover{
+	background-size: 105% auto;
+}
+.preview:hover .play{
+	opacity: 0.9;
+}
 .featured-video{
     position: relative;
     padding-bottom: 56.25%;

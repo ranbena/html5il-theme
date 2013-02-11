@@ -11,7 +11,8 @@
                 href="<?php the_permalink() ?>"><?php the_post_thumbnail('large');  ?></a></div>
         <?php } ?>
         <?php if (get('featured_video', TRUE)) {
-        echo '<div class="featured-video">' . get('featured_video', TRUE) . '</div>';
+        $youtube = get('featured_video');
+        echo '<div class="featured-video preview" data-youtube="'. $youtube .'" style="background-image:url(http://img.youtube.com/vi/' . $youtube . '/hqdefault.jpg)"><div class="play"></div></div>';
     } else {
             } ?>
 
