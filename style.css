@@ -486,8 +486,7 @@ dd:before {
 	}
 
 	.grid-item {
-		max-width: 324px;
-        margin-right:18px;
+		max-width: 350px;
 
 	}
 
@@ -524,12 +523,14 @@ dd:before {
 	}
 
 	.body-width {
-		width: 440px;
+		width: auto;
 		padding: 0 20px;
 	}
-
+	.post-grid{
+		width:100%;
+	}
 	.grid-item {
-		width: 400px;
+		width: 100%;
 	}
 
 	.page-pagination {
@@ -670,17 +671,19 @@ dd:before {
 	}
 
 	.body-width {
-		width: 300px;
-		padding: 0 10px;
+		width: 100%;
+		padding: 0 5px;
+		margin: 0 0;
+		box-sizing:  border-box;
 	}
 
 	.post-grid {
-		width: 300px;
+		width: 100%;
 	}
 
 	.grid-item {
 		margin-right: 0;
-		width: 260px;
+		width: 100%;
 	}
 
 	.large-container {
