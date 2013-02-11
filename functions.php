@@ -11,8 +11,10 @@
 				wp_register_script('jquery', ("http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"));
 				wp_register_script('jquery.masonry', (get_template_directory_uri()."/js/jquery.masonry.min.js"),'jquery',false,true);
 				wp_register_script('gridly.functions', (get_template_directory_uri()."/js/functions.js"),'jquery.masonry',false,true);
-				
+				wp_register_script('moment', (get_template_directory_uri()."/js/moment.min.js"),'moment',false,true);
+
 				wp_enqueue_script('jquery');
+				wp_enqueue_script('moment');
 				wp_enqueue_script('jquery.masonry');
 				wp_enqueue_script('gridly.functions');
 			}

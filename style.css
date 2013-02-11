@@ -1,4 +1,16 @@
 
+.next_event,
+.past_event{
+	display: none;
+}
+
+.next .next_event{
+	display: block;
+}
+.past .past_event{
+	display: block;
+}
+
 /*-----------------------------------------------------------------------------------*/
 /*	Homepage/Archive Styles (anywhere that grids are used)
 /*-----------------------------------------------------------------------------------*/

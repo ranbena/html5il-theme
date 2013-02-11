@@ -15,6 +15,18 @@ $(document).ready(function() {
       }
 
   });
+	if(past_meetups.length){
+		$('#next').addClass('past');
+		timeago = moment(past_meetups[0].time).fromNow();
+		$('#before_now').html(timeago);
+	}
+	if(future_meetups.length){
+		alert('sup');
+		$('#next').addClass('next');
+		timeago = moment(future_meetups[0].time).fromNow();
+		$('#from_now').html(timeago);
+		$('#join').attr('href',future_meetups[0].event_url);
+	}
 
     window.setTimeout(function(){
         $('#post-grid').masonry('reload')

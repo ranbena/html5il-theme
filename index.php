@@ -23,11 +23,35 @@
              </p>
         </div>
     </div>
-        <?php if ($flag == 0) { $flag = 1; ?>
-            <div class="grid-item">
+        <?php if ($flag == 0) {
+        $flag = 1;
+        $url = "https://api.meetup.com/2/events?key=597d711c1a263a1546671f5c1a67d42&sign=true&group_urlname=html5-il&page=1&status=past";
+        $url2 = "https://api.meetup.com/2/events?key=597d711c1a263a1546671f5c1a67d42&sign=true&group_urlname=html5-il&page=1&status=upcoming";
+        $curl = curl_init($url);
+        $curl2 = curl_init($url2);
+        curl_setopt($curl,CURLOPT_RETURNTRANSFER, 1);
+        curl_setopt($curl2,CURLOPT_RETURNTRANSFER, 1);
+        $return = curl_exec($curl);
+        $return2 = curl_exec($curl2);
+        curl_close($curl);
+        curl_close($curl2);
+        ?>
+        <script>
+            past_meetups = <?= $return ?>.results;
+            future_meetups = <?= $return2 ?>.results;
+        </script>
+            <div class="grid-item" id="next">
                 <?php if ( is_active_sidebar( 'second_post')) { ?>
-                			<?php dynamic_sidebar( 'second_post' ); ?>
+                        <?php dynamic_sidebar( 'second_post' ); ?>
                 <?php }  ?>
+                <div class="past_event">
+                    <h2>Our latest meetup was <span id="before_now"></span></h2>
+
+                </div>
+                <div class="next_event">
+                    <h2>Our next meetup is <span id="from_now"></span></h2>
+                    <a id="join" href="#" target="_blank">Join our next meetup</a>
+                </div>
             </div>
         <?php }?>
     <?php endwhile; ?>
