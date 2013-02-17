@@ -40,17 +40,16 @@
             past_meetups = <?= $return ?>.results;
             future_meetups = <?= $return2 ?>.results;
         </script>
-            <div class="grid-item" id="next">
-                <?php if ( is_active_sidebar( 'second_post')) { ?>
-                        <?php dynamic_sidebar( 'second_post' ); ?>
-                <?php }  ?>
+            <div class="grid-item" id="meetup">
                 <div class="past_event">
-                    <h3>Our latest meetup was <span id="before_now"></span></h3>
-
+                    <h3><a href="#" target="_blank">Last meetup</a></h3>
+                    <time></time>
                 </div>
                 <div class="next_event">
-                    <h3>Our next meetup is <span id="from_now"></span> - <a id="join" href="#" target="_blank" style="text-decoration: underline">Join</a></h3>
-
+                    <h3><a href="#" target="_blank">Upcoming</a></h3>
+                    <time></time>
+                    <a id="join" href="#" target="_blank">Join</a>
+                    <small>20 seats left</small>
                 </div>
             </div>
         <?php }?>
