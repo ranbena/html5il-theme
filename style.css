@@ -733,3 +733,69 @@ dd:before {
 	}
 
 }
+
+#next {
+	height: 96px;
+	padding: 0;
+	font-family: "Open Sans", arial;
+}
+#next .widget_text{
+	display: none;
+}
+#next>div {
+	float:left;
+	padding: 5px 10px 0;
+	font-size: 14px;
+	height: 91px;
+	position: relative;
+	color: white;
+}
+#next>div span{
+	position: absolute;
+	bottom: 10px;
+	left: 10px;
+}
+#next>div span em{
+	font-size: 56px;
+	font-style: normal;
+	font-weight: bold;
+}
+#next .past_event {
+	background-color: #e3492b;
+	width: 134px;
+	border-right: 2px solid #d8472a;
+}
+#next .past_event h3{
+	color: #f9d7d0;
+}
+#next .next_event {
+	background-color: #f0612f;
+	width: 264px;
+}
+#next>div #join{
+	width: 116px;
+	height: 45px;
+	line-height: 45px;
+	background-color: #ffffff;
+	border-radius: 3px;
+	box-shadow: 0 2px 0 #bb4c25;
+	position:absolute;
+	top: 13px;
+	right: 13px;
+	color: #f04828;
+	font-weight: bold;
+	font-size: 22px;
+	text-align: center;
+}
+#next>div #join:hover{
+	background-color: #f04828;
+}
+#next>div #seats_left{
+	width: 116px;
+	position:absolute;
+	bottom: 10px;
+	right: 13px;
+	font-size: 14px;
+	left: auto;
+	text-align: center;
+}
