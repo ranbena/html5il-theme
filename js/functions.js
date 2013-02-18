@@ -34,7 +34,7 @@ $(document).ready(function() {
 	});
 	if(past_meetups && past_meetups.length){
 		var evt = past_meetups[0],
-			parent = $("#meetup .next_event");
+			parent = $("#meetup .past_event");
 
 		$('#meetup').addClass('past');
 		parent.find('time').html(moment(evt.time).fromNow());
@@ -42,7 +42,7 @@ $(document).ready(function() {
 	}
 	if(future_meetups && future_meetups.length){
 		var evt = future_meetups[0],
-			parent = $("#meetup .past_event");
+			parent = $("#meetup .next_event");
 
 		$('#meetup').addClass('next');
 		parent.find('time').html(moment(evt.time).fromNow());
