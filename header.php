@@ -12,6 +12,8 @@
 <!--	<link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>-->
     <link rel="stylesheet" type="text/css" media="all" href="<?php echo get_template_directory_uri(); ?>/css/reset.css" />
 
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    
     <?php  $options = get_option('plugin_options');
 			$gridly_color_scheme = $options['gridly_color_scheme'];
 			$gridly_logo = $options['gridly_logo'];

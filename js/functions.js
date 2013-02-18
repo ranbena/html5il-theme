@@ -15,16 +15,43 @@ $(document).ready(function() {
       }
 
   });
+  	moment.lang('en', {
+	    relativeTime : {
+	        future: "%s to go",
+	        past:   "%s ago",
+	        s:  "seconds",
+	        m:  "<em>1</em> minute",
+	        mm: "<em>%d</em> minutes",
+	        h:  "<em>1</em> hour",
+	        hh: "<em>%d</em> hours",
+	        d:  "<em>1</em> day",
+	        dd: "<em>%d</em> days",
+	        M:  "<em>1</em> month",
+	        MM: "<em>%d</em> months",
+	        y:  "<em>1</em> year",
+	        yy: "<em>%d</em> years"
+	    }
+	});
 	if(past_meetups && past_meetups.length){
-		$('#next').addClass('past');
-		timeago = moment(past_meetups[0].time).fromNow();
-		$('#before_now').html(timeago);
+		var evt = past_meetups[0],
+			parent = $("#meetup .next_event");
+
+		$('#meetup').addClass('past');
+		parent.find('time').html(moment(evt.time).fromNow());
+		parent.find('h3 a').attr('href',evt.event_url);
 	}
 	if(future_meetups && future_meetups.length){
-		$('#next').addClass('next');
-		timeago = moment(future_meetups[0].time).fromNow();
-		$('#from_now').html(timeago);
-		$('#join').attr('href',future_meetups[0].event_url);
+		var evt = future_meetups[0],
+			parent = $("#meetup .past_event");
+
+		$('#meetup').addClass('next');
+		parent.find('time').html(moment(evt.time).fromNow());
+		parent.find('h3 a').attr('href',evt.event_url);
+		$('#join').attr('href',evt.event_url);
+
+		var seatsLeft = evt.rsvp_limit-evt.yes_rsvp_count,
+			seatsText = seatsLeft + ' seat' + (seatsLeft != 1 ? 's' : '') + ' left';
+		parent.find('small').html(seatsText);
 	}
 
     window.setTimeout(function(){
