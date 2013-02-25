@@ -86,7 +86,8 @@ $(document).ready(function() {
 			function() {
 				$(this).fadeTo(300, 1.0);
 			}
-		);	
+		);
+
 		
 	
 });
